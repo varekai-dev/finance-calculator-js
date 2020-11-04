@@ -55,6 +55,7 @@ const countingAvailableMoney = ()=>{
   totalMonthInput.value = totalMonth
   // totalDayInput.value = Math.round(totalDay)
   // totalYearInput.value = Math.round(totalYear)
+  calculattionPrecents()
 }
 
 
