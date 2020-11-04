@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body>
+  
+  <h1>My calculator</h1>
+<div class="container">
+  
+ <div class="wrapper">
+
+   <div class="first-col">
+    <label for="">Дохід</label>
+    <input class="input" type="number" placeholder="Зарплата" id="income-salary">
+    <input class="input" type="number" placeholder="Фріланс" id="income-freelance">
+    <input class="input" type="number" placeholder="Додатковий дохід" id="income-extra-1">
+    <input class="input" type="number" placeholder="Додатковий дохід" id="income-extra-2">
+   </div>
+ <div class="second-col"> <label for="">витрати</label>
+  <input class="input" type="number" placeholder="Квартира" id="costs-flat">
+  <input class="input" type="number" placeholder="Комуналка" id="cost-house-services">
+  <input class="input" type="number" placeholder="Їда" id="cost-transport">
+  <input class="input" type="number" placeholder="Додаткові розваги" id="costs-credit">
+</div>
+  
+ </div>
+ <div class="right-side">
+   <div>Доступно в місяць:
+    <input type="number" id="total-month" value='0' readonly>
+   </div>
+   <div>Доступно в день:
+    <input type="number"  value='0' readonly id="total-day">
+  </div><div>Назбираэм за рік:
+    <input  type="number"  value='0' readonly  id="total-year">
+  </div>
+ </div>
+
+
+</div>
+<div class="container bottom-content">
+  <div class="copilka">
+    <h2>Відкладаєм</h2>
+    <input  class="input" type="range" min="0" max="100" value="0" id="money-box-range"> 
+    <div  > <span id="total-percantages">0</span>%</div>
+  </div>
+  <div class="text">
+    <div class="kopim">збираєм:  <input  type="number"  value='0' readonly id="accumulation"/> </div>
+    <div class="tratim">тратим:  <input  type="number"  value='0' readonly id="spend"/> </div>
+  </div>
+</div>
+
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
