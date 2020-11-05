@@ -16,27 +16,31 @@
 
    <div class="first-col">
     <label for="">Дохід</label>
-    <input class="input" type="number" placeholder="Зарплата" id="income-salary">
-    <input class="input" type="number" placeholder="Фріланс" id="income-freelance">
-    <input class="input" type="number" placeholder="Додатковий дохід" id="income-extra-1">
+    <input class="input" type="number" placeholder="Зарплата-1" id="income-salary">
+    <input class="input" type="number" placeholder="Зарплата-2" id="income-freelance">
+    <input class="input" type="number" placeholder="Зарплата-3" id="income-extra-1">
     <input class="input" type="number" placeholder="Додатковий дохід" id="income-extra-2">
    </div>
  <div class="second-col"> <label for="">витрати</label>
   <input class="input" type="number" placeholder="Квартира" id="costs-flat">
   <input class="input" type="number" placeholder="Комуналка" id="cost-house-services">
   <input class="input" type="number" placeholder="Їда" id="cost-transport">
-  <input class="input" type="number" placeholder="Додаткові розваги" id="costs-credit">
+  <input class="input" type="number" placeholder="Додаткові витрати" id="costs-credit">
+ 
 </div>
   
  </div>
  <div class="right-side">
-   <div>Доступно в місяць:
+   <div>Доступно в місяць (без копілки):
     <input type="number" id="total-month" value='0' readonly>
    </div>
    <div>Доступно в день:
     <input type="number"  value='0' readonly id="total-day">
   </div><div>Назбираэм за рік:
     <input  type="number"  value='0' readonly  id="total-year">
+  </div>
+  <div>Податки за місяць:
+    <input  type="number"  value='0' readonly  id="total-podatky">
   </div>
  </div>
 

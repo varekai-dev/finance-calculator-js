@@ -34,7 +34,7 @@ h1 {
 }
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   align-items: space-between;
 }

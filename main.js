@@ -19,7 +19,7 @@ const costTransport = document.getElementById('cost-transport')
 const totalMonthInput = document.getElementById('total-month')
 const totalDayInput = document.getElementById('total-day') 
 const totalYearInput = document.getElementById('total-year') 
-
+const totalPodatkyInput = document.getElementById('total-podatky')
 
 let totalMonth=0,
  totalDay=0, 
@@ -49,12 +49,10 @@ const countingAvailableMoney = ()=>{
    const totalPerMonth = strToNumb(incomeSalary) + strToNumb(incomeFreelance) +  strToNumb(incomeExtra1) +  strToNumb(incomeExtra2)
    const totalCost = strToNumb(costsFlat) + strToNumb(costHouseServices) +  strToNumb(costsCredit) +  strToNumb(costTransport)
  
-  totalMonth = totalPerMonth - totalCost
-  // totalDay =totalMonth/30
-  // totalYear = totalDay*365
+  totalMonth = totalPerMonth - totalCost - totalPerMonth/100*5 -1100
   totalMonthInput.value = totalMonth
-  // totalDayInput.value = Math.round(totalDay)
-  // totalYearInput.value = Math.round(totalYear)
+
+  totalPodatkyInput.value = totalPerMonth/100*5 +1100
   calculattionPrecents()
 }
 
